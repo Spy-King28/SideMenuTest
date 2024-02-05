@@ -13,6 +13,7 @@
 		FA45A4582B7126AF00F70B96 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA45A4562B7126AF00F70B96 /* Main.storyboard */; };
 		FA45A45A2B7126B200F70B96 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA45A4592B7126B200F70B96 /* Assets.xcassets */; };
 		FA45A45D2B7126B200F70B96 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA45A45B2B7126B200F70B96 /* LaunchScreen.storyboard */; };
+		FA45A4662B71273200F70B96 /* SideMenu in Frameworks */ = {isa = PBXBuildFile; productRef = FA45A4652B71273200F70B96 /* SideMenu */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +32,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA45A4662B71273200F70B96 /* SideMenu in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +85,9 @@
 			dependencies = (
 			);
 			name = SideMenuTest;
+			packageProductDependencies = (
+				FA45A4652B71273200F70B96 /* SideMenu */,
+			);
 			productName = SideMenuTest;
 			productReference = FA45A44D2B7126AF00F70B96 /* SideMenuTest.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +116,9 @@
 				Base,
 			);
 			mainGroup = FA45A4442B7126AF00F70B96;
+			packageReferences = (
+				FA45A4642B71273200F70B96 /* XCRemoteSwiftPackageReference "SideMenu" */,
+			);
 			productRefGroup = FA45A44E2B7126AF00F70B96 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -363,6 +371,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		FA45A4642B71273200F70B96 /* XCRemoteSwiftPackageReference "SideMenu" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/jonkykong/SideMenu.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.5.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		FA45A4652B71273200F70B96 /* SideMenu */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FA45A4642B71273200F70B96 /* XCRemoteSwiftPackageReference "SideMenu" */;
+			productName = SideMenu;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = FA45A4452B7126AF00F70B96 /* Project object */;
 }
